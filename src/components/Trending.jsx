@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Trending = () => {
@@ -56,7 +56,9 @@ const Trending = () => {
         ) : filteredCoins.length > 0 ? (
           filteredCoins.map((coin, idx) => (
             <div key={idx} className='rounded-div-c flex justify-between p-4 hover:scale-105 ease-in-out duration-300'>
+
               <div className='flex w-full items-center justify-between'>
+
                 <div className='flex'>
                   <img
                     className='mr-4 rounded-full'
@@ -77,6 +79,8 @@ const Trending = () => {
                   <p>{coin.item.price_btc.toFixed(7)}</p>
                 </div>
               </div>
+
+
             </div>
           ))
         ) : (
