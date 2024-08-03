@@ -3,17 +3,12 @@ import CoinItem from './CoinItem';
 
 // The CoinSearch component
 function CoinSearch({ coins }) {
-  // State to store the search input text
   const [searchText, setSearchText] = useState('');
-  // State to handle loading
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simulate data fetching
   useEffect(() => {
-    // Set loading to true when data fetching starts
     setIsLoading(true);
 
-    // Simulate a network request with setTimeout
     const timer = setTimeout(() => {
       setIsLoading(false); // Set loading to false once data is fetched
     }, 2000); // Simulate a 2-second delay
@@ -33,7 +28,7 @@ function CoinSearch({ coins }) {
   return (
     <div className='rounded-div my-4'>
       <div className='flex flex-col lg:flex-row justify-between'>
-        <p className='text-xl'>Browse Coins</p>
+        <p className='text-xl font-semibold'>Browse Coins</p>
         <form>
           <input
             onChange={(e) => setSearchText(e.target.value)} // Update searchText state on input change
