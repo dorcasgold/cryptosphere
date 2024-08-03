@@ -25,6 +25,9 @@ export default {
         accent: 'var(--color-bg-darkish)',
         darkish: 'var(--color-text-accent)',
       },
+      boxShadow: {
+        'custom-green': '-2px -4px 3px -2px rgba(34, 197, 94, 0.36), 0px - 3px 9px 3px rgba(34, 197, 94, 1); ',
+      },
     },
   },
   plugins: [],

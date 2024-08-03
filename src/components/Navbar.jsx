@@ -10,7 +10,7 @@ function Navbar() {
     setNav(!nav);
   };
   return (
-    <nav className='rounded-div font-sans flex items-center my-2 justify-between h-20 font-bold'>
+    <nav className='rounded-div-b font-sans flex items-center my-2 justify-between h-20 font-bold'>
       <Link to='/'>
         <h1 className='text-2xl'>CryptoSphere</h1>
       </Link>
